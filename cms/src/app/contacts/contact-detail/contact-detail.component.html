@@ -1,0 +1,26 @@
+<div class="contact-container table-bordered">
+  <div>
+    <h1>{{ contact.name }}</h1>
+  </div>
+  <div class="img-btns">
+    <div>
+      <img
+        [src]="contact.imageUrl"
+        [alt]="contact.name"
+        class="img-responsive"
+      />
+    </div>
+    <div>
+      <button class="btn btn-primary">Edit</button>
+      <button class="btn btn-danger">Delete</button>
+    </div>
+  </div>
+</div>
+<div class="list-group-item clearfix detail-info">
+  <h4 class="list-group-item-heading">
+    Email: <span>{{ contact.email }}</span>
+  </h4>
+  <h4 class="list-group-item-heading">
+    Phone: <span>{{ contact.phone }}</span>
+  </h4>
+</div>
