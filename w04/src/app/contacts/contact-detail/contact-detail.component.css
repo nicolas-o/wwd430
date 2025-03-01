@@ -1,0 +1,27 @@
+.contact-container {
+  background-color: #eee;
+  padding: 0 30px 20px 30px;
+}
+
+.img-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  button {
+    margin: 5px;
+  }
+}
+
+.detail-info {
+  padding: 20px;
+
+  h4 {
+    margin: 10px 0;
+    font-weight: bold;
+
+    span {
+      font-weight: normal;
+    }
+  }
+}
