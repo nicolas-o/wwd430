@@ -1,0 +1,13 @@
+<div class="contacts-header table-bordered">
+  <div class="pull-left">
+    <h3 class="list-group-item-heading">Contacts</h3>
+  </div>
+  <button class="btn btn-success pull-right">New Contact</button>
+</div>
+<div class="list-group-item clearfix">
+  <app-contact-item
+    *ngFor="let contact of contacts"
+    [contact]="contact"
+    [routerLink]="[contact.id]"
+  ></app-contact-item>
+</div>

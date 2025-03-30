@@ -1,0 +1,11 @@
+.contacts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  padding: 20px;
+
+  .list-group-item-heading {
+    font-weight: bold;
+  }
+}
