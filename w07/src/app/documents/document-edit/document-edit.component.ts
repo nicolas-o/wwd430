@@ -7,6 +7,7 @@ import { DocumentService } from '../document.service';
 @Component({
   selector: 'app-document-edit',
   standalone: false,
+
   templateUrl: './document-edit.component.html',
   styleUrl: './document-edit.component.css',
 })
