@@ -1,0 +1,21 @@
+<div class="contacts-header table-bordered">
+  <div class="pull-left">
+    <h3 class="list-group-item-heading">Contacts</h3>
+  </div>
+  <button class="btn btn-success pull-right" [routerLink]="['new']">
+    New Contact
+  </button>
+</div>
+
+<div
+  cdkDropList
+  [cdkDropListConnectedTo]="['groupList']"
+  class="list-group-item clearfix"
+>
+  <app-contact-item
+    *ngFor="let contact of contacts"
+    [contact]="contact"
+    cdkDrag
+    [cdkDragData]="contact"
+  ></app-contact-item>
+</div>

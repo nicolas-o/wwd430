@@ -1,0 +1,41 @@
+<div class="contact-container table-bordered">
+  <div>
+    <h1>{{ contact?.name }}</h1>
+  </div>
+  <div class="img-btns">
+    <div>
+      <img
+        [src]="contact?.imageUrl"
+        [alt]="contact?.name"
+        class="img-responsive"
+      />
+    </div>
+    <div>
+      <button
+        class="btn btn-primary"
+        [routerLink]="['/contacts', contact?.id, 'edit']"
+      >
+        Edit
+      </button>
+      <button class="btn btn-danger" (click)="onDelete()">Delete</button>
+    </div>
+  </div>
+</div>
+
+<div class="list-group-item clearfix detail-info">
+  <h4 class="list-group-item-heading">
+    Email: <span>{{ contact?.email }}</span>
+  </h4>
+  <h4 class="list-group-item-heading">
+    Phone: <span>{{ contact?.phone }}</span>
+  </h4>
+</div>
+
+<div class="panel panel-default" *ngIf="contact?.group?.length > 0">
+  <div class="panel-body">
+    <h3>Contacts in Team:</h3>
+    <div *ngFor="let groupContact of contact.group" class="group-contact">
+      <app-contact-item [contact]="groupContact"></app-contact-item>
+    </div>
+  </div>
+</div>

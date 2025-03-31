@@ -13,7 +13,6 @@ import { Subscription } from 'rxjs';
 export class ContactListComponent implements OnInit, OnDestroy {
   contacts: Contact[] = [];
   subscription: Subscription;
-  draggedContact: Contact | null = null;
 
   constructor(private contactService: ContactService) {}
 
@@ -28,9 +27,5 @@ export class ContactListComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.subscription.unsubscribe();
-  }
-
-  onDragStart(contact: Contact) {
-    this.draggedContact = contact;
   }
 }

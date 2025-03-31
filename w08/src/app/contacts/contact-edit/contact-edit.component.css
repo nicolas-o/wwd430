@@ -1,0 +1,18 @@
+.pad-left-right {
+  padding-left: 0.1rem;
+}
+
+.deleteButton {
+  margin-top: 1.5rem;
+  margin-left: -1.2rem;
+  width: 3.4rem;
+}
+
+.drag-contact {
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.buttons {
+  margin-top: 15px;
+}
